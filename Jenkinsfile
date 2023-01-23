@@ -14,7 +14,7 @@ pipeline{
   stages{
     stage("Checkout SCM"){
       steps{
-        git branch: 'master', credentialsId: 'GITHUB_CRED', url: 'https://github.com/creasmit/allolecoleBack.git'
+        git branch: 'master', credentialsId: 'GITHUB_CRED', url: ''
       }
     }
     stage("Build app"){
