@@ -48,8 +48,6 @@ public class AuthController {
 
         StatusResponse statusResponse = new StatusResponse();
         try {
-            // ResponseEntity responseEntity = this.send("auth/?type=username-pwd", data,
-            // "POST");
 
             UserProfil userProfil2 = this.profilService.login(userProfil.getName(), userProfil.getPassword());
 
